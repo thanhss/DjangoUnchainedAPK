@@ -1,0 +1,33 @@
+#more {
+   position: absolute;
+   left: 0px;
+}
+
+#more > image-fader {
+   z-index: 1;
+}
+
+#more > .more_background_bar {
+   z-index: 0;
+}
+
+#more .more_background_bar {
+   position: absolute;
+   left: 0px;
+   top: 268px;
+}
+
+#more .close {
+   position: absolute;
+   left: 1161px;
+   top: 204px;
+}
+
+.more-swiper-container {
+	/* Specify Swiper's Size: */
+        top: 300px;
+        left: 250px;
+	width: 750px;
+	height: 250px;
+        position: absolute;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <title>Django Unchained</title>
+
+        <!-- swiper -->
+        <link rel="stylesheet" href="swiper/idangerous.swiper.css" type="text/css" charset="utf-8">
+        <script type="text/javascript" src="swiper/idangerous.swiper-2.0.js" charset="utf-8"></script>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/scrollbar-reset.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/shared.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/home.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/features.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/more.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/chapters.css" type="text/css" media="screen" charset="utf-8">
+
+
+        <!-- Controllers -->
+        <script type="text/javascript" src="controllers/home.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="bleed">
+            <div id="navigation">
+                <div id="home">
+                    <div class="bg_video">
+                        <video id="bg_video" src="images/home/bghome.mp4" autoplay loop></video>
+                    </div>
+                    <div class="mm_bar ">
+                        <img src="images/home/mm_bar.png">
+                    </div>
+                    <div class="play image-fader" onclick="toggleTab('play')">
+                        <img src="images/home/play_i.png">
+                        <img src="images/home/play_a.png">
+                        <img src="images/home/play_a.png">
+                    </div>
+                    <div class="chapters image-fader" onclick="toggleTab('chapters')">
+                        <img src="images/home/chapters_i.png">
+                        <img src="images/home/chapters_a.png">
+                        <img src="images/home/chapters_a.png">
+                    </div>
+                    <div class="features image-fader" onclick="toggleTab('features')">
+                        <img src="images/home/features_i.png">
+                        <img src="images/home/features_a.png">
+                        <img src="images/home/features_a.png">
+                    </div>
+                    <div class="more image-fader" onclick="toggleTab('more')">
+                        <img src="images/home/more_i.png">
+                        <img src="images/home/more_a.png">
+                        <img src="images/home/more_a.png">
+                    </div>
+                    <div class="tabs">
+                        <div class="tab show" id="play">
+                        </div>
+                        <div class="tab hidden"id="chapters">
+                            <div class="chapter_bar ">
+                                <img src="images/chapters/chapter_bar.png">
+                            </div>
+                            <div class="left_arrow image-fader">
+                                <img src="images/chapters/left_arrow_i.png">
+                                <img src="images/chapters/left_arrow_a.png">
+                            </div>
+                            <div class="right_arrow image-fader">
+                                <img src="images/chapters/right_arrow_i.png">
+                                <img src="images/chapters/right_arrow_a.png">
+                            </div>
+                            <div class="close image-fader" onclick="toggleTab('chapters')">
+                                <img src="images/common/close_i.png">
+                                <img src="images/common/close_a.png">
+                            </div>
+                            <div class="chapters-swiper-container swiper-container">
+                                <div class="swiper-wrapper">
+                                    <script>
+                                        for(var i=1; i<=28; i++)
+                                            document.write('<div class="swiper-slide"><img src="images/chapters/chapter_' + ((i<10)?'0':'') + i + '.png" /></div>');
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab hidden" id="features">
+                            <div class="features_bar ">
+                                <img src="images/features/features_bar.png">
+                            </div>
+                            <div class="f1 reimaging image-fader">
+                                <img src="images/features/reimaging_i.png">
+                                <img src="images/features/reimaging_a.png">
+                            </div>
+                            <div class="close image-fader" onclick="toggleTab('features')">
+                                <img src="images/common/close_i.png">
+                                <img src="images/common/close_a.png">
+                            </div>>
+                        </div>
+                        <div class="tab hidden"id="more">
+                            <div class="more_background_bar ">
+                                <img src="images/more/more_bar.png">
+                            </div>
+                            <div class="close image-fader" onclick="toggleTab('more')">
+                                <img src="images/common/close_i.png">
+                                <img src="images/common/close_a.png">
+                            </div>
+                            <div class="more-swiper-container swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="images/more/link_01_i.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/more/link_02_i.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/more/link_03_i.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/more/link_04_i.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/more/link_05_i.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/more/link_06_i.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/more/link_07_i.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
